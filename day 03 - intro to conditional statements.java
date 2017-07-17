@@ -1,8 +1,6 @@
 import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+
 public class Solution {
    
    public static void main(String[] args) {
@@ -16,7 +14,11 @@ public class Solution {
          ans = "Weird";
       }
       else{
-         // Complete the code 
+        if ((n >=2 && n<=5) || n > 20) {
+            ans="Not Weird";
+        } else {
+            ans="Weird";
+        }
       }
       System.out.println(ans);
    }
