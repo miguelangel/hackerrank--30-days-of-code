@@ -1,6 +1,4 @@
-import java.io.*;
 import java.util.*;
-
 
 public class Solution {
 
@@ -12,5 +10,10 @@ public class Solution {
             arr[i] = in.nextInt();
         }
         in.close();
+
+        for (int i = n-1; i > 0; i--) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.print(arr[0]);
     }
 }
